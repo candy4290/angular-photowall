@@ -1,0 +1,46 @@
+<div class="formBox">
+    <form nz-form [formGroup]="myForm" class="login-form" (ngSubmit)="onLogin()">
+        <div nz-form-item class="loginBox">
+            <div nz-form-control nzHasFeedback class="contentBox">
+                <div xyy-form-control-validator>
+                    <nz-input formControlName="userName" [nzPlaceHolder]="'请输入用户名...'" [nzSize]="'large'">
+                        <ng-template #prefix>
+                            <i class="anticon anticon-user"></i>
+                        </ng-template>
+                    </nz-input>
+                </div>
+            </div>
+        </div>
+        <div nz-form-item class="loginBox">
+            <div nz-form-control nzHasFeedback class="contentBox">
+                <div xyy-form-control-validator>
+                    <nz-input id="password" formControlName="password" [nzType]="'password'" [nzPlaceHolder]="'请输入密码...'" [nzSize]="'large'">
+                        <ng-template #prefix>
+                            <i class="anticon anticon-lock"></i>
+                        </ng-template>
+                    </nz-input>
+                </div>
+            </div>
+        </div>
+        <div nz-form-item class="loginBox" *ngIf="needVerify && errorVerifyCount <= 0">
+            <div nz-form-control nzHasFeedback>
+                <div class="captchaBox">
+                    <img alt="验证码" class="picStyle" src="{{content}}" (click)="refreshCaptcha()" />
+                    <div class="captchInput">
+                        <nz-input id="captcha" formControlName="captcha" [nzPlaceHolder]="'请输入验证码'" [nzSize]="'large'"></nz-input>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div nz-form-item class="buttonBox">
+            <div nz-form-control>
+                <label nz-checkbox formControlName="remember">
+                    <span>记住用户名</span>
+                </label>
+                <div class="contentBox">
+                    <button fis-button class="buttonStyle" [uiType]="'primary'" [uiSize]="'large'" [uiLoading]="loading" [disabled]="!myForm.valid">登录</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

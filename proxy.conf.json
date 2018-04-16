@@ -1,0 +1,14 @@
+{
+    "/ks-main/newService/**": {
+        "target": {
+            "host": "localhost",
+            "protocol": "http:",
+            "port": 8090
+        },
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "proxyTimeout": 5000
+    }
+
+}

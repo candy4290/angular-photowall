@@ -1,0 +1,100 @@
+{
+    "head": [
+        { "id": "dim", "label": "多维度系统分析", "icon": "fa-bar-chart fa-2x", "routerLink": "dim" },
+        { "id": "doc", "label": "文档管理", "icon": "fa-calendar fa-2x", "routerLink": "doc" },
+        { "id": "func", "label": "通用查询", "icon": "fa-book fa-2x", "routerLink": "func" },
+        { "id": "dim", "label": "合规矩阵", "icon": "fa-support fa-2x", "routerLink": "custom" },
+        { "id": "schedule", "label": "系统监控", "icon": "fa-twitter fa-2x", "routerLink": "schedule" }
+    ],
+    "dim": [
+        {
+            "label": "多数据源",
+            "router": "datasource",
+            "icon": "fa-support",
+            "child": [
+                {"label": "查询", "icon": "fa-twitter", "router": "datasource"},
+                {"label": "新增", "icon": "fa-twitter", "router": "datasource/add"}
+            ]
+        },
+        {
+            "label": "查询语句",
+            "icon": "fa-calendar",
+            "router": "query"
+        },
+        {
+            "label": "指标功能",
+            "icon": "fa-book",
+            "router": "function"
+        },
+        {
+            "label": "指标参数",
+            "icon": "fa-bar-chart",
+            "router": "param"
+        },
+        {
+            "label": "维度信息",
+            "icon": "fa-twitter",
+            "router": "dimension",
+            "child": [
+                {"label": "查询", "router": "dimension/list"},
+                {"label": "新增", "router": "dimension/add"}
+            ]
+        },
+        {
+            "label": "模板",
+            "icon": "fa-support",
+            "router": "templateUpgrade"
+        }
+    ],
+    "doc": [
+        {
+            "label": "测试",
+            "icon": "fa-support",
+            "routerLink": "test"
+        }
+    ],
+    "com-search": [
+        {
+            "label": "测试",
+            "icon": "fa-support",
+            "routerLink": "com-search/func/20171107001"
+        },
+        {
+            "label": "多数据源查询",
+            "routerLink": "../",
+            "icon": "fa-support",
+            "child": [
+                {"label": "查询", "icon": "fa-twitter", "routerLink": "dim/datasource"},
+                {"label": "新增", "icon": "fa-twitter", "routerLink": "dim/datasource/add"}
+            ]
+        }
+    ],
+    "schedule": [
+        {
+            "label": "汇总",
+            "icon": "fa-support",
+            "routerLink":"schedule/home"
+        },
+        {
+            "label": "采集任务",
+            "icon": "fa-book",
+            "routerLink":"schedule/collect"
+        },
+        {
+            "label": "调度任务",
+            "icon": "fa-book",
+            "routerLink":"schedule/dispatch"
+        },
+        {
+            "label": "资源",
+            "icon": "fa-book",
+            "routerLink":"schedule/resource"
+        },
+        {
+            "label": "库表空间",
+            "icon": "fa-book",
+            "routerLink":"schedule/datatable"
+
+        }
+    ]
+}

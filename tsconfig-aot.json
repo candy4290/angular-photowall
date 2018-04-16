@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": ["es2015", "dom"],
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "typeRoots": [
+            "./node_modules/@types/"
+        ]
+    },
+
+    "files": [
+        "src/app/app.module.ts",
+        "src/app/pages/multi-dimension-analysis/multi-dimension-analysis.module.ts",
+        "src/main-aot.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "src/polyfill.ts"
+    ],
+    "angularCompilerOptions": {
+        "genDir": "aot",
+        "skipMetadataEmit": true
+    }
+}

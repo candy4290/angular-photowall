@@ -1,0 +1,86 @@
+body.fis-body {
+    font-size: 14px;
+}
+
+.ui-panel-content {
+    padding: 0 !important;
+    border: 0 solid white;
+}
+
+.ui-panel {
+    border: 0 solid white;
+}
+
+// 设置p-calendar的宽度
+.ui-calendar {
+    width: 100%;
+}
+
+// 调整p-panel的toggle样式
+.ui-panel .ui-panel-titlebar-icon {
+    margin-top: 2px;
+}
+
+.ui-dialog.ui-widget .ui-dialog-titlebar {
+    padding: 0.5em 1em;
+}
+
+.ui-dialog-footer {
+    padding: 0.5em;
+    border-width: 1px 0 0;
+    text-align: right;
+}
+
+.fixed-top {
+    z-index: 1000 !important;
+}
+
+.ui-tree .ui-treenode-droppoint {
+    height: 0;
+}
+
+
+@mixin datatable() {
+    & + .ui-datatable-hoverable-rows {
+        .ui-datatable-emptymessage {
+            text-align: center;
+            color: red;
+            span {
+                overflow: hidden;
+            }
+        }
+    }
+    & {
+        .ui-datatable-emptymessage {
+            span {
+                text-align: center;
+                color: red;
+                display: block;
+            }
+        }
+    }
+}
+.ui-datatable-data {
+    @include datatable();
+};
+
+.ant-radio-group {
+    margin-top: 6px;
+}
+
+// datatable单元格中内容自动换行
+.ui-datatable {
+    .ui-datatable-data {
+        tr {
+            td {
+                padding: .75em;
+                word-break: break-word;
+            }
+        }
+    }
+}
+
+.ui-tabview.ui-widget-content {
+    margin-top: 5px;
+    padding: 0;
+}

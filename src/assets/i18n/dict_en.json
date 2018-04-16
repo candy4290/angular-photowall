@@ -1,0 +1,212 @@
+{
+    "app": {
+        "lang": "Language",
+        "zh": "Chinese",
+        "en": "English",
+        "zh-CN": "Simplified Chinese",
+        "zh-TW": "Traditional Chinese",
+        "yes": "Yes",
+        "no": "No"
+    },
+    "userName": "user name",
+    "password": "password",
+    "transaction": {
+        "results": "Transaction results",
+        "successful": "Transaction successful",
+        "failure": "Transaction failure"
+    },
+    "datasource":{
+        "legend":"define datasource",
+        "sourceName": "source name",
+        "sourceId":"sourceId",
+        "sourceDriver": "source driver",
+        "sourceUrl": "source url",
+        "userName": "user name",
+        "password": "password",
+        "lastUpdateTms": "last update timestamp",
+        "placeholder":{
+            "sourceName":"please input datasource name",
+            "sourceDriver":"please input database driver name",
+            "userName":"please input database username",
+            "sourceUrl":"please input datasource URL",
+            "password":"please input database password"
+        }
+    },
+    "dimension":{
+        "legend":"define dimension",
+        "dimList":"dimension list",
+        "dimId":"dimension ID",
+        "parentDimId":"parent dimension",
+        "filterQueryId":"filter condition query",
+        "dimName":"dimension name",
+        "dimType":"dimension type",
+        "dimParam":"dimension param",
+        "dimParamValue":"dimension param value",
+        "inputCompType":"component type",
+        "baseDim":"base dimension",
+        "filterDim":"filter dimension",
+        "groupDim":"group dimension",
+        "compQueryId":"component query ",
+        "compQuery":"query component",
+        "dimInputCom":"dimension input component",
+        "lastUpdateTms": "last update timestamp",
+        "operation": "operation",
+        "placeholder":{
+            "dimName":"please input dimension name",
+            "inputCompType":"please select input component type...",
+            "compQueryId":"please select query component...",
+            "fatherDim":"please select father dimension..."
+        },
+        "value": {
+            "dimType": {
+                "0": "base dim",
+                "1": "filter dim",
+                "3": "group dim"
+            },
+            "inputCompType": {
+                "D": "date",
+                "Q": "query",
+                "T": "query tree"
+            }
+        }
+    },
+    "function":{
+        "legend":"add indicator function",
+        "indicatorFunList":"indicator function list",
+        "choose":"choose",
+        "lastUpdateTms": "last update timestamp",
+        "operation": "operation",
+        "funcId":"function ID",
+        "funcName":"function name",
+        "funcOrd":"function order",
+        "funcDescription":"description",
+        "funcExpression":"expression",
+        "funcOutname":"function out name",
+        "spName":"sp name",
+        "inputFuncCategoryId":"indicator category",
+        "placeholder":{
+            "funcName":"please input function name",
+            "funcOrd":"please input function order",
+            "funcDescription":"please input remark description",
+            "funcExpression":"please input function expression",
+            "funcOutname":"please input indicator name",
+            "spName":"please input stored procedure name(SP)"
+        }
+    },
+    "query":{
+        "legend":"add datasource query statement",
+        "choose":"choose",
+        "priority":"priority",
+        "queryId":"ID",
+        "queryName":"query name",
+        "sourceId":"data source",
+        "queryDescription":"remark description",
+        "queryExpression":"expression",
+        "queryCategoryId":"indicator category",
+        "resultType":"return type",
+        "queryCode":"query code",
+        "lastUpdateUser":"last update user",
+        "lastUpdateTms":"last update time",
+        "operation": "operation",
+        "placeholder":{
+            "queryName":"please input query name",
+            "sourceId":"please select datasource...",
+            "queryDescription":"please input remark description",
+            "resultType":"please select return type",
+            "queryExpression":"please input expression",
+            "queryCode":"please input query code"
+        }
+    },
+    "param":{
+        "legend":"add function param",
+        "funParamList":"function param list",
+        "paramId":"param id",
+        "paramName":"param name",
+        "paramDescription":"param description",
+        "defaultValue":"default",
+        "dataType":"data type",
+        "dimId":"dimension id",
+        "paramOrd":"param order",
+        "dim":"dimension",
+        "compQueryId":"query component",
+        "inputCompType":"component type",
+        "operation":"operation",
+        "funcId":"function id",
+        "placeholder":{
+            "paramName":"please input param name",
+            "paramDescription":"please input param description",
+            "defaultValue":"please input default",
+            "dataType":"please select data type",
+            "dimId":"please select relevant dimension",
+            "inputCompType":"please select input component type...",
+            "compQueryId":"please select query component...",
+            "paramOrd":"please input param order"
+        },
+        "value": {
+            "dataType": {
+                "1": "string"
+            },
+            "inputCompType": {
+                "D": "date",
+                "Q": "query",
+                "T":"query tree",
+                "H":"handle"
+            }
+        }
+    },
+    "template":{
+        "runResult":"running result",
+        "tempInformation":"template information",
+        "tempList":"template list",
+        "templateName":"template name",
+        "templateDesc":"template description",
+        "templateType":"template type",
+        "templateId":"template id",
+        "lastUpdateUser":"last update user",
+        "lastUpdateTms":"last update timestamp",
+        "templateCategory":"choose category",
+        "dimFuncName":"function name",
+        "type":{
+            "0":"common",
+            "2":"custom"
+        },
+        "placeholder":{
+            "tempName":"please input template name",
+            "tempDesc":"please input template description"
+        }
+    },
+    "submit":"Submit",
+    "update":"Update",
+    "edit":"Edit",
+    "run":"Run",
+    "back":"Back",
+    "categoryName":"category name",
+    "description":"description",
+    "placeholder": {
+        "categoryName":"please input name",
+        "description":"please input description"
+    },
+    "lastUpdateTms": "last update timestamp",
+    "operation": "operation",
+    "no_records_found": "No records found.",
+    "documentation": {
+        "fileName": "文件名",
+        "fileName-placeholder": "文件名3到32个字符",
+        "keyWords": "关键字",
+        "keyWords-placeholder": "关键字2到32个字符",
+        "remark": "备注",
+        "remark-placeholder": "备注8个字符",
+
+        "file": {
+            "name": "文件名称",
+            "storeType": {
+                "0": "数据库",
+                "1": "硬盘"
+            }
+        },
+        "folder": {
+            "folderName": "目录名称",
+            "name-placeholder": "请输入目录名称"
+        }
+    }
+}

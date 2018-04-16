@@ -1,0 +1,15 @@
+{
+    "error": {
+        "required": "Please provide a valid {{error.field}}.",
+        "minlength": "{{error.field}} minimum length cannot be less than: {{error.requiredLength}}, current length: {{error.actualLength}}",
+        "maxlength": "{{error.field}} maximum length cannot be greater than: {{error.requiredLength}}, current length: {{error.actualLength}}"
+    },
+    "confirm": {
+        "delete": {
+            "datasource": "Confirm delete data source?",
+            "template": "Confirm delete template?",
+            "function": "Confirm delete function?"
+        }
+    }
+
+}

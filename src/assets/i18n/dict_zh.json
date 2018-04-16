@@ -1,0 +1,278 @@
+{
+    "app": {
+        "title": "框架平台管理系统",
+        "lang": "语言",
+        "zh": "中文",
+        "en": "英文",
+        "zh-CN": "简体中文",
+        "zh-TW": "繁体中文",
+        "yes": "是",
+        "no": "否"
+    },
+    "userName": "用户名",
+    "password": "密码",
+    "oldPassword": "旧密码",
+    "newPassword": "新密码",
+    "confirmPassword": "确认密码",
+    "transaction": {
+        "results": "交易结果",
+        "successful": "交易成功",
+        "failure": "交易失败"
+    },
+    "datasource":{
+        "legend":"定义数据源",
+        "sourceId":"数据源Id",
+        "sourceName":"数据源名称",
+        "sourceDriver":"驱动名称",
+        "userName":"用户名",
+        "sourceUrl":"数据源URL",
+        "password":"密码",
+        "lastUpdateTms": "最后更新时间",
+        "placeholder":{
+            "sourceName":"请输入数据源名称",
+            "sourceDriver":"请输入数据库驱动名称",
+            "userName":"请输入数据库用户名",
+            "sourceUrl":"请输入数据源URL",
+            "password":"请输入数据库密码"
+        }
+    },
+    "dimension":{
+        "legend":"定义维度",
+        "dimList":"维度列表",
+        "dimId":"维度ID",
+        "dimName":"维度名称",
+        "dimType":"维度类型",
+        "parentDimId":"父维度",
+        "filterQueryId":"过滤条件查询",
+        "compQueryId":"组件查询",
+        "dimParam":"维度参数",
+        "dimParamValue":"维度参数值",
+        "inputCompType":"组件类型",
+        "lastUpdateTms": "最后更新时间",
+        "baseDim":"基础维度",
+        "filterDim":"过滤维度",
+        "groupDim":"组合维度",
+        "compQuery":"组件查询",
+        "dimInputCom":"维度输入组件",
+        "operation": "操作",
+        "placeholder":{
+            "dimName":"请输入维度名称",
+            "inputCompType":"请选择输入组件类型...",
+            "compQueryId":"请选择查询组件...",
+            "fatherDim":"请选择父维度..."
+        },
+        "value": {
+            "dimType": {
+                "0": "基础维度",
+                "1": "过滤维度",
+                "3": "组合维度"
+            },
+            "inputCompType": {
+                "D": "日期",
+                "Q": "查询",
+                "T": "查询树"
+            }
+        }
+    },
+    "function":{
+        "legend":"新增指标功能",
+        "indicatorFunList":"指标功能列表",
+        "choose":"选择",
+        "funcId":"功能号",
+        "funcName":"功能名称",
+        "funcExpression":"功能表达式",
+        "funcOutname":"指标名称",
+        "funcOrd":"功能顺序",
+        "funcDescription":"备注描述",
+        "lastUpdateTms": "最后更新时间",
+        "inputFuncCategoryId":"指标目录",
+        "spName":"存储过程名称",
+        "operation": "操作",
+        "placeholder":{
+            "funcName":"请输入功能名",
+            "funcOrd":"请输入功能顺序",
+            "funcDescription":"请输入备注描述",
+            "funcExpression":"请输入功能表达式",
+            "funcOutname":"请输入指标名称",
+            "spName":"请输入存储过程名称(SP)",
+            "categoryName":"请输入名称",
+            "description":"请输入描述"
+        }
+    },
+    "query":{
+        "legend":"新增数据源查询语句",
+        "choose":"选择",
+        "priority":"优先级",
+        "queryId":"ID",
+        "queryName":"查询名称",
+        "queryExpression":"表达式",
+        "sourceId":"数据源",
+        "queryCategoryId":"所属目录",
+        "queryDescription":"备注描述",
+        "resultType":"返回类型",
+        "queryCode":"查询代码",
+        "lastUpdateUser":"最后更新用户",
+        "lastUpdateTms":"最后更新时间",
+        "operation": "操作",
+        "placeholder":{
+            "queryName":"请输入查询名称",
+            "sourceId":"请选择数据源...",
+            "queryDescription":"请输入备注描述",
+            "resultType":"请选择返回类型",
+            "queryExpression":"请输入表达式",
+            "queryCode":"请输入查询代码"
+        },
+        "value": {
+            "resultType": {
+                "L": "集合",
+                "M": "对象"
+            }
+        }
+    },
+    "param":{
+        "legend":"新增功能参数",
+        "funParamList":"功能参数列表",
+        "paramId":"参数Id",
+        "paramName":"参数名称",
+        "paramDescription":"参数代称",
+        "defaultValue":"默认值",
+        "paramOrd":"参数顺序",
+        "funcId":"功能号",
+        "dataType":"参数数据类型",
+        "dimId":"关联维度",
+        "inputCompType":"组件类型",
+        "compQueryId":"查询组件",
+        "operation":"操作",
+        "placeholder":{
+            "paramName":"请输入参数名称",
+            "paramDescription":"请输入参数代称",
+            "defaultValue":"请输入默认值",
+            "dataType":"请选择数据类型",
+            "dimId":"请选择关联维度",
+            "inputCompType":"请选择输入组件类型...",
+            "compQueryId":"请选择查询组件...",
+            "paramOrd":"请输入参数顺序"
+        },
+        "value": {
+            "dataType": {
+                "1": "字符串"
+            },
+            "inputCompType": {
+                "D": "日期",
+                "Q": "查询",
+                "T":"查询树",
+                "H":"手工"
+            }
+        }
+    },
+    "template":{
+        "runResult":"运行结果",
+        "tempInformation":"模板信息",
+        "tempList":"模板列表",
+        "templateName":"模板名称",
+        "templateDesc":"模板描述",
+        "templateType":"模板类型",
+        "templateId":"模板ID",
+        "lastUpdateUser":"最后更新用户",
+        "lastUpdateTms":"最后更新时间",
+        "templateCategory":"选择目录",
+        "dimFuncName":"功能名称",
+        "type":{
+            "0":"常规",
+            "2":"定制"
+        },
+        "placeholder":{
+            "tempName":"请输入模板名称",
+            "tempDesc":"请输入模板描述"
+        }
+    },
+    "submit":"提交",
+    "update":"更新",
+    "edit":"编辑",
+    "run":"运行",
+    "back":"返回",
+    "categoryName":"目录名称",
+    "description":"目录描述",
+    "placeholder": {
+        "categoryName":"请输入名称",
+        "description":"请输入描述"
+    },
+    "lastUpdateTms": "最后更新时间",
+    "operation": "操作",
+    "no_records_found": "没有找到记录",
+    "documentation": {
+        "fileName": "文件名",
+        "fileName-placeholder": "文件名3到32个字符",
+        "keyWords": "关键字",
+        "keyWords-placeholder": "关键字2到32个字符",
+        "remark": "备注",
+        "remark-placeholder": "备注8个字符",
+
+        "file": {
+            "name": "文件名称",
+            "storeType": {
+                "0": "数据库",
+                "1": "硬盘"
+            }
+        },
+        "folder": {
+            "folderName": "目录名称",
+            "name-placeholder": "请输入目录名称"
+        }
+    },
+    "schedule": {
+		"executedFlag": {
+			"0": "未执行",
+			"1": "等待运行",
+			"2": "正在执行",
+			"3": "执行成功",
+			"4": "执行失败",
+			"5": "请求中断成功",
+			"6": "强制中断成功",
+			"21": "实时执行失败"
+		},
+		"flowStatus": {
+			"1": "未校验",
+			"2": "校验失败",
+			"3": "就绪",
+			"4": "运行中",
+			"5": "停止"
+		},
+		"resource": {
+			"type": {
+				"program": "进程",
+				"mem": "内存",
+				"cpu": "CPU",
+				"process": "进程",
+				"disk": "磁盘"
+			},
+			"value": {
+				"0": "无",
+				"1": "有"
+			},
+			"alarm_level": {
+				"warn": "报警",
+				"normal": "正常"
+			}
+		}
+    },
+    "dwzq":{
+        "flowStatus":{
+            "00":"废弃",
+            "0":"未明",
+            "1":"处理中",
+            "2":"已完成",
+            "10":"草稿",
+            "11":"驳回",
+            "20":"待审",
+            "30":"发布"
+        },
+        "1607d3856713ceb89e57e274d389d9cb":"风险监控任务流程模板",
+        "A15fe7b6f463511e12a816db4b6995e9d":"风险监控",
+        "lastUpdateStatus":{
+            "0":"失败",
+            "1":"成功"
+        }
+    }
+
+}

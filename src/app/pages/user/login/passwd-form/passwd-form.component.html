@@ -1,0 +1,55 @@
+<div class="formBox">
+    <form nz-form [formGroup]="myForm" class="login-form" (ngSubmit)="doIt()">
+        <div nz-form-item class="loginBox">
+            <div nz-form-control nzHasFeedback class="contentBox">
+                <div xyy-form-control-validator>
+                    <nz-input formControlName="userName" [nzPlaceHolder]="'请输入用户名...'" [nzSize]="'large'">
+                        <ng-template #prefix>
+                            <i class="anticon anticon-user"></i>
+                        </ng-template>
+                    </nz-input>
+                </div>
+            </div>
+        </div>
+        <div nz-form-item class="loginBox">
+            <div nz-form-control nzHasFeedback class="contentBox">
+                <div xyy-form-control-validator>
+                    <nz-input formControlName="password" [nzType]="'password'" [nzPlaceHolder]="'请输入旧密码...'" [nzSize]="'large'">
+                        <ng-template #prefix>
+                            <i class="anticon anticon-lock"></i>
+                        </ng-template>
+                    </nz-input>
+                </div>
+            </div>
+        </div>
+        <div nz-form-item class="loginBox">
+            <div nz-form-control nzHasFeedback class="contentBox">
+                <div xyy-form-control-validator>
+                    <nz-input xyyEqualValidate="confirmPassword" reverse="true" errKey="password.notEqual" formControlName="newPassword" [nzType]="'password'" [nzPlaceHolder]="'请输入新密码...'" [nzSize]="'large'">
+                        <ng-template #prefix>
+                            <i class="anticon anticon-lock"></i>
+                        </ng-template>
+                    </nz-input>
+                </div>
+            </div>
+        </div>
+        <div nz-form-item class="loginBox">
+            <div nz-form-control nzHasFeedback class="contentBox">
+                <div xyy-form-control-validator>
+                    <nz-input xyyEqualValidate="newPassword" errKey="password.notEqual" formControlName="confirmPassword" [nzType]="'password'" [nzPlaceHolder]="'请输入确认密码...'" [nzSize]="'large'">
+                        <ng-template #prefix>
+                            <i class="anticon anticon-lock"></i>
+                        </ng-template>
+                    </nz-input>
+                </div>
+            </div>
+        </div>
+        <div nz-form-item class="buttonBox">
+            <div nz-form-control>
+                <div class="contentBox">
+                    <button fis-button class="buttonStyle" [uiType]="'primary'" [uiSize]="'large'" [uiLoading]="loading" [disabled]="!myForm.valid">确认</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

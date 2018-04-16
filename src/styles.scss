@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+/* 你可以添加全局的样式到这个文件中，并且可以引入其它的样式文件 */
+@import './assets/scss/app';
+
+@import '~primeng/resources/primeng.min.css';
+@import '~primeng/resources/themes/omega/theme.css';
+
+// @import 'variables';
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap/scss/bootstrap';
+
+// Font Awesome字体定义
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+
+@import '~@angular/material/theming';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+// @import '~fis-ui/src/assets/FisIcon/css/font.css';
+// @import '~fis-ui/src/assets/sass/app.scss';
+

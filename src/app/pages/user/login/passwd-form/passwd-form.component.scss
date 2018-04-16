@@ -1,0 +1,28 @@
+.loginBox {
+    padding: 15px 15px 0;
+}
+
+.contentBox {
+    position: relative;
+    width: 264px;
+}
+
+.formBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonBox {
+    padding: 15px 15px 0;
+    .buttonStyle {
+        width: 100%;
+    }
+    .cancelButton {
+        float: right;
+    }
+}
+
+.login-form-forgot {
+    float: right;
+}

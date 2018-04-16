@@ -1,0 +1,41 @@
+.loginBox {
+    padding: 15px 15px 0;
+}
+
+.contentBox {
+    position: relative;
+    width: 264px;
+}
+
+.formBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonBox {
+    padding: 0 15px;
+    .buttonStyle {
+        width: 100%;
+    }
+    .cancelButton {
+        float: right;
+    }
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.captchaBox {
+    display: flex;
+    .picStyle {
+        position: relative;
+        top: 50%;
+        transform: translateY(35%);
+    }
+    .captchInput {
+        position: absolute;
+        right: 0;
+    }
+}

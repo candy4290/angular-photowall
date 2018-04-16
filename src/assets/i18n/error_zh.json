@@ -1,0 +1,33 @@
+{
+    "error": {
+        "required": "{{error.field}}不能为空！",
+        "minlength": "{{error.field}}最小字符数:{{error.requiredLength}}，当前字符数:{{error.actualLength}}",
+        "maxlength": "{{error.field}}最大字符数:{{error.requiredLength}}，当前字符数:{{error.actualLength}}",
+        "notEqual": "不相等",
+        "password": {
+            "notEqual": "新密码与确认密码不一致"
+        }
+    },
+    "confirm": {
+        "delete": {
+            "datasource": "确认删除数据源？",
+            "template": "确认删除模板?",
+            "function": "确认删除指标?"
+        }
+    },
+    "system": {
+        "yes": "是",
+        "no": "否",
+        "err": {
+            "unknown": "系统未知异常",
+            "network": "网络异常",
+            "prompt": "错误提示",
+            "timeout": "系统超时",
+            "connection_refused": "连接被拒绝，请检查服务状态"
+        },
+        "transaction_failed": "交易失败",
+        "transaction_failed_template": "错误代码：{{rtnCode}}<br>错误信息：{{rtnMsg}}",
+        "exception_services": "服务异常",
+        "not_found": "404：请求链接[{{url}}]不存在"
+    }
+}

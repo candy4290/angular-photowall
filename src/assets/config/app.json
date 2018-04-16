@@ -1,0 +1,42 @@
+{
+    "log-level": "debug",
+    "api": {
+        "origin": "http://localhost:8090",
+        "url": {
+            "default": "/ks-main/newService/standard/json",
+            "download": "/ks-main/newService/download",
+            "upload": "/ks-main/newService/upload",
+            "web": "/ks-main/newService/web",
+            "monitor": "http://10.253.46.66:8090/newService/standard/json"
+        },
+        "retCodeField": "retCode",
+        "retMsgField": "retMsg",
+        "retDataField": "rspData",
+        "successCode": "000000"
+    },
+    "url": {
+        "login": "/ks-main"
+    },
+    "pagination": {
+        "pageSize":  10,
+        "rowsPerPageOptions": [10,20,50,100]
+    },
+    "commonSearch": {
+        "showExcelExport": true,
+        "dynamicFormUrl": "/ks-main/web/form/form?UI_ID=",
+        "functionUrl": "/#/func/",
+        "workFlowUrl": "/ks-main/web/wf/wfStart"
+    },
+    "dwzq": {
+        "refreshTime":"30000"
+    },
+    "flowTemplate": [
+        {
+            "name": "风险监控任务流程模板",
+            "id": "1607d3856713ceb89e57e274d389d9cb"
+        }
+    ],
+    "monitor-platform": {
+        "refreshTime": ""
+    }
+}

@@ -1,0 +1,64 @@
+// 将设置放入此文件中以覆盖默认值和用户设置。
+{
+    "psi-header.variables": [
+        ["projectCreationYear", "2018"],
+        ["company", "金仕达"],
+        ["authoremail", "Yayun.Xiong@kingstarfintech.com"]
+    ],
+    "psi-header.lang-config": [
+        {
+            "language": "javascript",
+            "begin": "/**",
+            "prefix": " * ",
+            "end": " */",
+            "blankLinesAfter": 2,
+            "forceToTop": false
+        },
+        {
+            "language": "typescript",
+            "mapTo": "javascript"
+        }
+    ],
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "Created Date: <<filecreated('YYYY-MM-DD HH:mm:ss dddd')>>",
+                "Author: <<author>> (<<authoremail>>)",
+                "-----",
+                "Last Modified: <<dateformat('YYYY-MM-DD HH:mm:ss dddd')>>",
+                "Modified By: <<author>> at <<<authoremail>>>",
+                "-----",
+                "Copyright (c) <<year>> <<company>>"
+            ]
+        },
+        {
+            "language": "javascript",
+            "template": [
+                "Created Date: <<filecreated('YYYY-MM-DD HH:mm:ss dddd')>>",
+                "Author: <<author>> (<<authoremail>>)",
+                "-----",
+                "Last Modified: <<dateformat('YYYY-MM-DD HH:mm:ss dddd')>>",
+                "Modified By: <<author>> at <<<authoremail>>>",
+                "-----",
+                "Copyright (c) <<year>> <<company>>"
+            ]
+        },
+        {
+            "language": "scss",
+            "template": [
+                "Created Date: <<filecreated('YYYY-MM-DD HH:mm:ss dddd')>>",
+                "Author: <<author>> (<<authoremail>>)",
+                "-----",
+                "Last Modified: <<dateformat('YYYY-MM-DD HH:mm:ss dddd')>>",
+                "Modified By: <<author>> at <<<authoremail>>>",
+                "-----",
+                "Copyright (c) <<year>> <<company>>"
+            ]
+        },
+        {
+            "language": "typescript",
+            "mapTo": "javascript"
+        }
+    ]
+}

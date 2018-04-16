@@ -1,0 +1,103 @@
+/***
+e.g.
+
+<div class="spin-container" id="pageSpin">
+    <div class="spin1">
+        <div class="spin2"></div>
+        <div class="spin3"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    const initialize = function () {
+        let pageSpin = document.getElementById("pageSpin");
+        pageSpin.style.display = 'block';
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                pageSpin.style.display = 'none';
+            }
+        }
+    }
+    initialize();
+</script>
+
+***/
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(1turn);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.spin-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1003;
+    background: #1190D6;
+    display: none;
+}
+
+.spin-container .spin1 {
+    display: block;
+    position: relative;
+    left: calc(50% + 15px);
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top-color: #F95372;
+    transform: translateZ(0);
+    animation: spin 2s linear infinite;
+}
+
+.spin-container .spin2 {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top-color: #00ABFF;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+.spin-container .spin3 {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top-color: #E7BA08;
+    animation: spin 1.5s linear infinite;
+}

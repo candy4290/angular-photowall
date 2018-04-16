@@ -1,0 +1,39 @@
+
+export class UserModel {
+    accessIp: string;
+    accessMac: string;
+    address: string;
+    certNo: string;
+    createDate: string;
+    createUserCode: string;
+    deptCode: string;
+    deptId: string;
+    duty: string;
+    email: string;
+    errorTimes: 0;
+    groupLimit: 0;
+    ifAllowDelete: 0;
+    ifLogin: 0;
+    labor: string;
+    lastUpdateTms: string;
+    lastUpdateUser: string;
+    lastVisitDate: number;
+    lastVisitIp: string;
+    loginStatus: number;
+    password: string;
+    phone: string;
+    position: string;
+    remark: string;
+    roleLevel: number;
+    secretFlag: number;
+    status: number;
+    tel: string;
+    updateDate: number;
+    updateUserCode: string;
+    userCode: string;
+    userId: number;
+    userName: string;
+    userType: string;
+    validDate: string;
+    visitCount: number;
+}
